@@ -1,0 +1,72 @@
+<!--
+  CCTB Website Development
+  IST105
+  Oct 2024
+  Description: This is a simple login website where students are asked to 
+  implement Social Network Login with Firebase
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Firebase App with Authentication with Social Networks">
+  <title>Home - Cultural Connections</title>
+  <link rel="stylesheet" href="css/core.min.css" />
+  <link rel="stylesheet" href="css/vendor_bundle.min.css" />
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+  <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+  <script src="./js/firebase.js"></script>
+  <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="./js/home.js"></script>
+  <style>
+    body {
+      background-color: rgb(207, 228, 231);
+    }
+    h3 {
+      background-color: rgb(47, 35, 96);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="color: rgb(35, 19, 19); text-align: center;"><B><U>Cultural Connections</U></B></h1>
+  <h2 style="text-align: center;"><B>Hello, I'm Uchral. Welcome to my cultural connections page! </B></h2>
+  <img src="/public/IMG_1113.jpg" alt="Me" style=" height: 270px; display: block; margin: 0 auto; text-align: center;">
+  <p>
+      <h3>Cultural Shocks:</h3>
+      <ol>
+        <li>Housing:
+          When I moved from Ulaanbaatar, Mongolia, to Vancouver, I was surprised by how many people live in individual houses rather than apartments. In Ulaanbaatar, it’s more common to see people living in apartments, especially in the city center. This difference made me wonder why housing preferences vary so much. I realized that in Canada, space and land are generally more available and affordable outside major cities, making it easier for families to live in houses. In contrast, urban areas in Mongolia are denser, leading to more apartment living. This contrast in living arrangements gave me a new perspective on how geography and cultural priorities can influence housing choices.</li>
+        <li>Pets:
+          Another cultural shock I experienced was seeing so many people with pets in Vancouver. In Mongolia, while people do have pets, it’s not as common to see people walking their dogs around town. Here in Vancouver, almost every time I go out, I see people with their pets, particularly dogs. It feels like animals are an important part of many Canadian families, and there’s a strong culture of pet ownership and animal care. This made me think that perhaps Canadians value animals differently or see pets as essential companions, while in Mongolia, pets are often seen more practically, for purposes like guarding homes.</li>
+      </ol>
+      <h3>What I miss the most about my country:</h3>
+      <ol>
+        <li>Food:
+          One of the things I miss the most about Mongolia is the food. Growing up, I always ate dishes made with local Mongolian ingredients, which gives a unique taste even to international dishes. Here in Canada, the bread, milk, and meat all taste different from what I’m used to back home, making it harder to feel at home with the food. The flavors and textures I grew up with are a big part of my comfort, so adjusting to these new tastes has been challenging.</li>
+          <li>My Comfort Zone:
+            Another thing I really miss is the sense of comfort and familiarity I had in Mongolia. I was surrounded by people I’ve known my whole life, ate foods that were familiar, and slept in my own bed that I had been using for years. Everything felt known and safe. Now, here in Canada, almost everything feels new to me—the language, the environment, and the people. While I’m excited to learn and grow, I miss the security and comfort of my familiar surroundings, where I always felt at home.</li>
+      </ol>
+      <h3>What I love about Vancouver:</h3>
+      <ol>
+        <li>Nature:
+          One of the most amazing things I love about Vancouver is the nature. I find it incredible to see parks, forests, and mountains integrated into the city. At first, I was surprised to see a “forest” in the middle of the city, but I quickly grew to love it. Walking around the parks, with trees and scenic paths everywhere, always makes me feel better and helps me relax. The balance between urban life and nature here is something really special.</li>
+        <li>Community and Helpfulness:
+          I also appreciate how people here respect each others space but are quick to help when needed. I love that everyone minds their own business, which gives me a sense of freedom and privacy. But if I ask for help, people are genuinely ready to assist in any way they can. This combination of independence and helpfulness makes me feel secure, knowing that support is available if I need it. It’s comforting to be in a community where people are friendly and willing to lend a hand without being intrusive.
+          </li>
+      </ol>
+      <h3>My personal goal at this stage of my life:</h3>
+      <ul>
+        <li>My personal goal at this stage of my life is to learn as much as possible. I want to take advantage of this time to gain new skills and knowledge, especially in my field of cybersecurity, as well as in areas that will help me grow personally. Beyond academics, I’m also excited to explore new cultures, connect with people from different backgrounds, and gain a broader understanding of the world. Additionally, I want to learn to live independently, building routines and habits that will help me thrive on my own. Balancing my time between learning and enjoying life is important to me. I want to make the most of every experience while I have the freedom and opportunity to explore.</li>
+      </ul>
+
+  </p>
+  <button id="sign-out" class="btn btn-primary">Sign Out</button>
+
+
+</body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" type="image/x-icon"
+    href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <style>
+        body{
+            background-image: url(/public/pexels-djpetty2-756790.jpg); background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <H1 style="text-align: center;">Login Page</H1>
+    <div style="margin: 20px; text-align: center;">
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <button onclick="signInWithEmailAndPassword()" id="sign-in-2">Login with Email/Password</button>
+    </div>
+    <div style="margin: 20px; text-align: center;">
+        <button onclick="signInWithGoogle()" id="sign-in-button">Login with Google</button>
+    </div>
+    <div style="text-align: center;">
+        <input type="numbers" id="phone" placeholder="Phone Number"><br>
+        <div id="recaptcha-container"></div>
+        <button onclick="signInWithPhone()" id="log-in-phonenumber">Login with Phone</button>
+    </div>
+
+</body>
+</html>
