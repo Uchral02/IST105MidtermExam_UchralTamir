@@ -19,7 +19,7 @@ function authStateListener() {
             // https://firebase.google.com/docs/reference/js/v8/firebase.User
             var uid = user.uid;
             // ...
-            location.href = 'culturalconnections.html';
+            location.href = 'Culturalconnections.html';
         } else {
             // User is signed out
             // ...
@@ -44,7 +44,7 @@ window.addEventListener('load', function () {
         firebase.auth().signInWithPopup(provider)
             .then(function (result) {
                 console.log('Logging sucessfully', result.user);
-                location.href = 'culturalconnections.html';
+                location.href = 'Culturalconnections.html';
             })
             .catch(function (error) {
                 console.log('Logging fail', error);
@@ -63,7 +63,7 @@ window.addEventListener('load', function () {
                 // ...
                 console.log('Logging sucessfully');
                 alert('Logging sucessfully');
-                location.href = 'culturalconnections.html';
+                location.href = 'Culturalconnections.html';
             })
             .catch((error) => {
                 let errorCode = error.code;
@@ -91,7 +91,7 @@ window.addEventListener('load', function () {
                     const user = result.user;
                     console.log('Logging successfully with phone number:', user);
                     alert('Logging successfully with phone number');
-                    location.href = 'culturalconnections.html';
+                    location.href = 'Culturalconnections.html';
                 })
                 .catch((error) => {
                     console.error('Error during phone number sign-in:', error);
